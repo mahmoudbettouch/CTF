@@ -47,6 +47,7 @@ The `smethod_16` function is a decryption method, which utilized DES encryption 
 
 ![image](https://github.com/user-attachments/assets/d486e355-593a-49b9-9429-542bed21440c)
 
+### Decrypting Strings
 
 Wrote Python script to replicate this decryption process:
 
@@ -65,15 +66,19 @@ def smethod_16(encrypted_string, key):
         print(f"Error decrypting string: {e}")
         return None
     
-   
+```
+### Results of Decryption
+
+By applying the Python script to the encrypted strings, the following results were obtained:
+
+```jsx
 print(smethod_16("zMaRPCbE0Gb4k/zB6ZNS3r1L34TENqMZD9RW6hkhoOE=", "nnrCOnrJyiwsACMwnkEJB"))
 # result "https://api.telegram.org/bot"
 
 print(smethod_16("FphMdFa3hOQv6jbOo+Di/krf6/KeCXcASv1A0PTZtTaqOQqu46FvhqM0pdqb8g0/", "BsrOkyiChvpfhAkipZAxnnChkMGkLnAiZhGMyrnJfULiDGkfTkrTELinhfkLkJrkDExMvkEUCxUkUGr"))
 # result "7267561120:QkhGbGFnWXt0M2xlZ3I0bV9nMGVzX3chbGR9"
 ```
-
-So that part of the code will result
+These strings were used to construct a Telegram API request:
 
 ```jsx
 			ServicePointManager.Expect100Continue = false;
@@ -97,6 +102,8 @@ So that part of the code will result
 ```
 
 Given our understanding of the Telegram API, these strings are parameters used to communicate with a Telegram bot. This suggests that the malware is designed to steal data and then use the bot to upload that data.
+
+### Getting The Flag
 
 To obtain the flag, all we needed to do was decode the bot token, which revealed the flag.
 
