@@ -100,3 +100,7 @@ Given our understanding of the Telegram API, these strings are parameters used t
 
 To obtain the flag, all we needed to do was decode the bot token, which revealed the flag.
 
+```jsx
+$ echo QkhGbGFnWXt0M2xlZ3I0bV9nMGVzX3chbGR9 | base64 -d           
+BHFlagY{t3legr4m_g0es_w!ld} 
+```
