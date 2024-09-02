@@ -69,7 +69,7 @@ def smethod_16(encrypted_string, key):
 ```
 ### Results of Decryption
 
-By applying the Python script to the encrypted strings, the following results were obtained:
+By applying the Python function to the encrypted strings, the following results were obtained:
 
 ```jsx
 print(smethod_16("zMaRPCbE0Gb4k/zB6ZNS3r1L34TENqMZD9RW6hkhoOE=", "nnrCOnrJyiwsACMwnkEJB"))
