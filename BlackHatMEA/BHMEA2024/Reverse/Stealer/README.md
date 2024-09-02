@@ -1,7 +1,7 @@
 # stealer
 ### Overview
 
-The task involved reverse engineering a `.Net 32-bit` executable named `snake.mal`. The primary objective was to analyze the executable, identify its functionality, and decode any hidden or encrypted data within the file. The reversing process was conducted using several tools, including `de4dot` for deobfuscation and custom scripts to decrypt strings used by the malware.
+The task involved reverse engineering a `.Net 32-bit` executable named `snake.mal`. The primary objective was to analyze the executable, identify its functionality, and decode any hidden or encrypted data within the file. The reversing process was conducted using dnspy for decompiling the executable, and `de4dot` for deobfuscation and a custom python script to decrypt strings used by the malware.
 
 ### Initial Analysis
 
