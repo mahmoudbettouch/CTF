@@ -5,7 +5,7 @@ The task involved reverse engineering a `.Net 32-bit` executable named `snake.ma
 
 ### Initial Analysis
 
-Upon opening `snake.mal.exe` in a decompiler, it was evident that the executable was heavily obfuscated. The functions and classes were renamed to nonsensical names, making manual analysis difficult.
+Upon opening `snake.mal.exe` in a dnSpy, it was evident that the executable was heavily obfuscated. The functions and classes were renamed to nonsensical names, making manual analysis difficult.
 
 ![image](https://github.com/user-attachments/assets/c7aade9d-9670-4ff0-97c2-2c966c68a8a4)
 
